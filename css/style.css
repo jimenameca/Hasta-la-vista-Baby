@@ -1,0 +1,253 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2B2B2B;
+}
+
+
+
+.logo img {
+    height: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    display: inline;
+}
+
+nav ul li a {
+    color: #d60eac;
+    text-decoration: solid;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-principio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: aliceblue;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+h1 {
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+}
+
+h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.titulo-principal {
+    color: #d60eac;
+    text-align: center;
+    padding: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+.container-flex-grid {
+    margin-top: 60px;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5%;
+    margin-bottom: 60px;
+    margin-left: 80px;
+}
+
+.imagen-card img {
+    height: 300px;
+    width: 300px;
+}
+
+.imagen-card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.parrafo-nosotros{
+    font-family: "poppins";
+    font-size: large;
+    text-align: justify;
+}
+
+.bloque-medio {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: aliceblue;
+}
+
+.boton {
+    background-color: grey;
+    color: black;
+    font-size: 25px;
+    border: 3px solid transparent;
+    text-decoration: none;
+}
+
+.boton:hover {
+    color: grey;
+    background-color: whitesmoke;
+}
+
+
+.medio-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    height: 50px;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+    background-color: #2B2B2B;
+}
+
+footer ul {
+    display: flex;
+    column-gap: 50px;
+    padding: 25px;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: aliceblue;
+    text-decoration: solid;
+}
+
+.logo-redes {
+    height: 5%;
+}
+
+.logo-pulp{
+    width: 200px;
+    height: 200px;
+    margin: 50px 70px;
+    position: relative;
+    left: 150px;
+}
+
+.logo-pulp{
+    width: 200px;
+    height: 200px;
+    margin: 50px 70px;
+}
+
+.dropdown{
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.veni-visitarnos{
+    text-align: start;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formulario{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* media query de table 768 1024 */
+@media screen and (min-width: 769px) and (max-width: 960px) {
+    header {
+        background-color: aliceblue;
+    }
+}
+
+
+
+/* media query mobile 320px 768px */
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .container-flex-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+        }
+    
+        .mini-logo {
+            display:none;
+        } 
+    
+    .bloque-medio{
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 500px;
+        align-items: center;
+    }
+
+    .imagen-card img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .fotorep{
+        display:none;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+    }  
+}
+
