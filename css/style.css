@@ -1,11 +1,12 @@
-reset * {
+/* reset * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: 1px solid #333333;
-}
+} */
 
-* header {
+/*  
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,11 +14,11 @@ reset * {
     padding: 10px;
     background-color: #2B2B2B;
 }
-
-.logo img {
+.logo {
     height: 150px;
 }
-
+*/
+/*
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -35,6 +36,13 @@ nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+*/
+
+/* fin header */
+
+/* ppio main */
+
+/* ese logo esta index accesorios ropa 
 .logo-principio {
     display: flex;
     flex-direction: column;
@@ -44,6 +52,7 @@ nav ul li a {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 
 
 h1 {
@@ -66,7 +75,9 @@ h3 {
     font-family: "Ubuntu", sans-serif;
 }
 
+*/
 
+/* refiere a las cards de productos esta en ropa accesorio index 
 .container-flex-grid {
     margin-top: 60px;
     display: grid;
@@ -94,22 +105,6 @@ h3 {
     margin: 20px;
 }
 
-.parrafo-nosotros {
-    font-family: "poppins";
-    font-size: large;
-    text-align: justify;
-}
-
-.bloque-medio {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 20px;
-    padding: 30px;
-    background-color: aliceblue;
-}
-
 .boton {
     background-color: grey;
     color: black;
@@ -123,7 +118,21 @@ h3 {
     color: grey;
     background-color: whitesmoke;
 }
+*/
 
+
+/* refiere a la parte de envios compra segura medios de pagos esta en
+index ropa accesorios
+
+.bloque-medio {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: aliceblue;
+}
 
 .medio-cards {
     display: flex;
@@ -136,6 +145,68 @@ h3 {
     object-fit: cover;
 }
 
+ */
+
+/* refiere a la seccion nosotros 
+.parrafo-nosotros {
+    font-family: "poppins";
+    font-size: large;
+    text-align: justify;
+}
+
+
+.veni-visitarnos {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.mapa {
+    display: block;
+    margin: 0 auto;
+}
+
+*/
+
+/*refiere a como comprar 
+
+.logo-pulp {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.parrafo-dudas {
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+
+
+.formulario {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    .dropdown {
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+
+/*
+boton 
+
+.dropdown {
+    padding: 50px;
+    border-radius: 20px;
+}
+*/
+
+/*
 
 footer {
     display: flex;
@@ -164,42 +235,7 @@ footer ul li a {
     height: 5%;
     padding: 20px;
 }
-
-.logo-pulp {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-
-.dropdown {
-    padding: 50px;
-    border-radius: 20px;
-}
-
-.veni-visitarnos {
-    text-align: start;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.formulario {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 20px;
-}
-
-.parrafo-dudas {
-    padding: 20px;
-    text-align: center;
-    font-size: large;
-}
-
-.mapa {
-    display: block;
-    margin: 0 auto;
-}
+*/
 
 
 /* media query de table 768 1024 */
@@ -209,11 +245,10 @@ footer ul li a {
     }
 }
 
-
-
 /* media query mobile 320px 768px */
 
 @media screen and (max-width: 768px) {
+    /*
     header {
         background-color: white;
         flex-direction: column;
@@ -228,7 +263,8 @@ footer ul li a {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, auto);
     }
-
+*/
+/*
     .mini-logo {
         display: none;
     }
@@ -239,6 +275,15 @@ footer ul li a {
         align-items: start;
     }
 
+    .logo-pulp {
+        display: none;
+    }
+/*
+    .container-flex-grid {
+        gap: 0%;
+    }
+*/
+/*
     .imagen-card img {
         width: 90%;
         margin: 10px;
@@ -249,20 +294,14 @@ footer ul li a {
     .fotorep {
         display: none;
     }
+*/
 
-
+/*
     footer {
         flex-direction: column;
         align-items: center;
-    }
-
     nav ul li {
         display: block;
     }
-
-    .logo-pulp {
-        display: none;
-    }
-
-
 }
+*/

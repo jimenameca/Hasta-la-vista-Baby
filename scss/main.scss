@@ -1,1 +1,15 @@
-@import "utilities/reset"
+@import "utilities/variables";
+@import "utilities/mixim";
+@import "utilities/extend";
+@import "utilities/reset";
+@import "components/header";
+@import "utilities/global";
+
+@import "pages/main_nosotros";
+@import "pages/main_como_comprar";
+
+@import "components/footer";
+@import "utilities/media_queries";
+
+
+

@@ -1,0 +1,86 @@
+h1 {
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.titulo-principal {
+    color: #d60eac;
+    text-align: center;
+    padding: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+
+main {
+    .logo-principio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        background-color: aliceblue;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .container-flex-grid {
+        margin-top: 60px;
+        display: grid;
+        justify-items: start;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 5%;
+        margin-bottom: 60px;
+        margin-left: 80px;
+    }
+
+    .imagen-card {
+        @include flex (column, center, center);
+        width: 400px;             
+        text-align: center;
+        margin: 20px;
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+    }
+
+    .boton {
+        background-color: map-get($map: $boton-compra, $key: bg-compra);
+        color: black;
+        font-size: 20px;
+        border: map-get($map: $boton-compra, $key: font-size-compra);
+        text-decoration: none;
+        padding: 10px;
+
+        &:hover {
+            color: grey;
+            background-color: whitesmoke;
+        }
+    }
+
+    .bloque-medio {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 20px;
+        padding: 30px;
+        background-color: aliceblue;
+        .medio-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

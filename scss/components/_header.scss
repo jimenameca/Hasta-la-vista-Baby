@@ -1,0 +1,32 @@
+/*header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: $color-menu-principal;
+
+    .logo {
+        height: 150px;
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin-right: 20px;
+                display: inline;
+
+                a {
+                    color: nth($list: $colores, $n: 1);
+                    text-decoration: solid;
+                    font-size: large;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+    }
+}
