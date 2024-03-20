@@ -198,10 +198,19 @@ footer .logo-redes {
   .mini-logo {
     display: none;
   }
+  main .titulo-principal {
+    text-align: center;
+    font-size: 24px;
+    color: blueviolet;
+    margin-bottom: 200px;
+  }
   main .container-flex-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 300px);
     gap: 400px;
+  }
+  main .imagen-card {
+    justify-content: center;
   }
   main .imagen-card img {
     width: 100%;
@@ -209,6 +218,8 @@ footer .logo-redes {
     object-fit: cover;
     text-align: center;
     padding: 55px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
   main .fotorep {
     display: none;
@@ -221,9 +232,8 @@ footer .logo-redes {
   .main_como_comprar .logo-pulp {
     display: none;
   }
-  .titulo-principal {
-    text-align: center;
-    padding: 50px;
+  .parrafo-mini {
+    font-size: small;
   }
   footer {
     flex-direction: column;

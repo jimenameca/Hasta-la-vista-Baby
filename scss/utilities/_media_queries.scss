@@ -31,10 +31,22 @@
 
 
     main {
+
+        .titulo-principal {
+            text-align: center;
+            font-size: 24px;
+            color:blueviolet;
+            margin-bottom: 200px;
+        }
+
         .container-flex-grid {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(4, 300px);
-            gap: 400px;        
+            gap: 400px;
+        }
+
+        .imagen-card {
+            justify-content: center;
         }
 
         .imagen-card img {
@@ -43,6 +55,8 @@
             object-fit: cover;
             text-align: center;
             padding: 55px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
 
         .fotorep {
@@ -62,25 +76,30 @@
         }
     }
 
-    .titulo-principal{
-        text-align: center;
-        padding: 50px;
+    .parrafo-mini {
+        font-size: small;
     }
+
+
+
 
     footer {
         flex-direction: column;
         align-items: center;
         background-color: beige;
-        gap:5px;
-        ul{
+        gap: 5px;
+
+        ul {
             flex-direction: column;
-            li{
-                display:block;
-                a{
-                    color:black
+
+            li {
+                display: block;
+
+                a {
+                    color: black
                 }
             }
         }
-        
+
     }
 }
