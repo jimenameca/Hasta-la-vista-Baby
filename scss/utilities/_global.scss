@@ -31,6 +31,7 @@ main {
         margin-bottom: 50px;
     }
 
+
     .container-flex-grid {
         margin-top: 60px;
         display: grid;
@@ -55,6 +56,8 @@ main {
         }
     }
 
+    
+    
     .boton {
         background-color: map-get($map: $boton-compra, $key: bg-compra);
         color: black;
@@ -67,7 +70,9 @@ main {
             color: grey;
             background-color: whitesmoke;
         }
+    
     }
+}
 
     .bloque-medio {
         margin-top: 100px;
@@ -83,4 +88,4 @@ main {
             align-items: center;
         }
     }
-}
+    
