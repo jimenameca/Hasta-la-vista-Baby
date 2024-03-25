@@ -217,17 +217,19 @@ footer .logo-redes {
   main .container-flex-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 300px);
-    gap: 400px;
+    gap: 200px;
   }
   main .imagen-card {
     justify-content: center;
+    width: 300px;
+    margin: 10px;
   }
   main .imagen-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     text-align: center;
-    padding: 55px;
+    padding: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
   }
@@ -238,6 +240,9 @@ footer .logo-redes {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 300px;
     align-items: start;
+  }
+  main h4 {
+    font-size: small;
   }
   .main_como_comprar .logo-pulp {
     display: none;
