@@ -35,7 +35,7 @@
         .titulo-principal {
             text-align: center;
             font-size: 24px;
-            color:blueviolet;
+            color: blueviolet;
             margin-bottom: 200px;
         }
 
@@ -80,6 +80,20 @@
         font-size: small;
     }
 
+    .main-nosotros {
+        .container-nosotros {
+
+            .veni-visitarnos {
+                font-size: 20px;
+            }
+
+            .gradiente {
+                padding: 10px 0;
+            }
+        }
+    }
+
+
 
     footer {
         flex-direction: column;
@@ -98,6 +112,5 @@
                 }
             }
         }
-
     }
 }
