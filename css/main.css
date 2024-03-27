@@ -31,19 +31,22 @@ header {
 header .logo {
   height: 150px;
 }
-header nav ul {
+header .desktop-menu ul {
   list-style-type: none;
   padding: 0;
 }
-header nav ul li {
+header .desktop-menu ul li {
   margin-right: 20px;
   display: inline;
 }
-header nav ul li a {
+header .desktop-menu ul li a {
   color: #d60eac;
   text-decoration: solid;
   font-size: large;
   font-family: Arial, Helvetica, sans-serif;
+}
+header .mobile-menu {
+  display: none;
 }
 
 h1 {
@@ -202,17 +205,18 @@ footer .logo-redes {
     flex-direction: column;
     align-items: center;
   }
-  header nav ul li {
-    display: block;
-  }
-  .mini-logo {
+  header .desktop-menu {
     display: none;
+  }
+  header .mobile-menu {
+    display: block;
+    margin-top: 10px;
   }
   main .titulo-principal {
     text-align: center;
     font-size: 24px;
     color: blueviolet;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   main .container-flex-grid {
     grid-template-columns: 1fr;
@@ -222,7 +226,6 @@ footer .logo-redes {
   main .imagen-card {
     justify-content: space-between;
     width: 300px;
-    margin: 10px;
   }
   main .imagen-card img {
     width: 100%;
@@ -231,14 +234,13 @@ footer .logo-redes {
     text-align: center;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
   }
   main .fotorep {
     display: none;
   }
   main .bloque-medio {
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 300px;
+    margin-top: 100px;
     align-items: start;
   }
   main h4 {

@@ -11,7 +11,7 @@ header {
         height: 150px;
     }
 
-    nav {
+    .desktop-menu {
         ul {
             list-style-type: none;
             padding: 0;
@@ -29,4 +29,8 @@ header {
             }
         }
     }
+
+    .mobile-menu {
+        display: none;
+    }   
 }
