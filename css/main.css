@@ -216,16 +216,20 @@ footer .logo-redes {
     text-align: center;
     font-size: 24px;
     color: blueviolet;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   main .container-flex-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 300px);
     gap: 200px;
+    justify-items: center;
+    margin-left: 0%;
   }
   main .imagen-card {
     justify-content: space-between;
     width: 300px;
+    margin: 50px;
+    padding: 16px;
   }
   main .imagen-card img {
     width: 100%;
