@@ -1,0 +1,30 @@
+.main_index{
+
+    .gradiente-4{
+        display: flex; 
+        justify-content:center;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    } 
+    .gradiente-4 img {
+        height: 100px;
+        width: 150px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+}
+    .animacion{
+        animation-name:spinner;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes spinner {
+        0%{
+            transform: rotate(0);
+        }
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+}

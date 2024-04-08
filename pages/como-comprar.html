@@ -29,8 +29,8 @@
 
 <body>
     <header>
-            <a href="./../index.html"> <img class="logo" src="./../img/logo6.png" alt="Logo-hastalavista">
-        <nav>
+        <img class="logo" src="./../img/logo6.png" alt="Logo-hastalavista">
+        <nav class="desktop-menu">
             <ul>
                 <li>
                     <a href="./../index.html">Inicio</a>
@@ -50,13 +50,28 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <main class="main_como_comprar">
-        <section>
-            <div>
-                <img src="./../img/logo-pulp.png" alt="imagen-pulpfiction" class="logo-pulp">
+        <nav class="mobile-menu">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Como Comprar
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./../index.html">Inicio</a></li>
+                    <li><a class="dropdown-item" href="./accesorios.html">Accesorios</a></li>
+                    <li><a class="dropdown-item" href="ropa.html">Ropa</a></li>
+                    <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+                </ul>
             </div>
+        </nav>
+    </header>
+    
+    <main class="main_como_comprar">
+        <section class="contenedor-como">
             <div>
+                <img src="./../img/carrie-ropa.jpg" alt="Sex and the city" class="como-comprar gradiente">
+            </div>
+            <div class="contenedor-lista">
                 <ol>
                     <li>Elegí el producto que te guste</li>
                     <li>Selecciona talle y color</li>
@@ -65,11 +80,15 @@
                     <li>Listo! dentro de las 24 hs. nos comunicamos por Whatsapp</li>
                 </ol>
             </div>
+            <div>
+                <img src="./../img/dicaprio.avif" alt="Leonardo di Caprio" class="como-comprar-2 gradiente-2">
+            </div>
         </section>
-        <div>
-            <p class="parrafo-dudas"> En caso de tener dudas/consultas podes contactarnos</p>
-        </div>
+
         <section class="formulario">
+            <div>
+                <p class="parrafo-dudas"> En caso de tener dudas/consultas podes contactarnos</p>
+            </div>
             <div class="mb-3 mt-5">
                 <label for="exampleFormControlInput1" class="form-label">Correo Eletronico</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
@@ -112,8 +131,11 @@
                         alt="Instagram"></a>
             </div>
         </footer>
+        <!-- link JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,31 +25,46 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./../css/main.css">
 </head>
-<header>
-    <a href="./../index.html"> <img class="logo" src="./../img/logo6.png" alt="Logo-hastalavista">
-        <nav>
-            <ul>
-                <li>
-                    <a href="./../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./ropa.html">Ropa</a>
-                </li>
-                <li>
-                    <a href="./accesorios.html">Accesorios</a>
-                </li>
-                <li>
-                    <a href="./como-comprar.html">Como Comprar</a>
-                </li>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-            </ul>
-        </nav>
-</header>
-
 <body>
+<header>
+    <img class="logo" src="./../img/logo6.png" alt="Logo-hastalavista">
+    <nav class="desktop-menu">
+        <ul>
+            <li>
+                <a href="./../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="./ropa.html">Ropa</a>
+            </li>
+            <li>
+                <a href="./accesorios.html">Accesorios</a>
+            </li>
+            <li>
+                <a href="./como-comprar.html">Como Comprar</a>
+            </li>
+            </li>
+            <li>
+                <a href="./nosotros.html">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="mobile-menu">
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Accesorios
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./../index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="./ropa.html">Ropa</a></li>                
+                <li><a class="dropdown-item" href="como-comprar.html">Como Comprar</a></li>
+                <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+            </ul>
+            </ul>
+        </div>
+    </nav>
+
+</header>
     <main>
         <section class="logo-principio">
             <h1>Ropa y Accesorios</h1>
@@ -74,32 +88,32 @@
         </section>
         <section class="container-flex-grid">
             <div class="imagen-card">
-                <img src="./../img/pelota-voley-wilson.png" alt="pelota wilson naufrago">
+                <img src="./../img/pelota-voley-wilson.png" alt="pelota wilson naufrago" class="gradiente-3">
                 <h3>Pelota Voley Wilson El Naufrago</h3>
                 <h3>$ 30.000</h3>
                 <h4>Art. 301</h4>
                 <a href="./como-comprar.html" class="boton">Comprar</a>
             </div>
             <div class="imagen-card">
-                <img src="./../img/llavero-freddy.png" alt="llavero freddy pesadilla">
+                <img src="./../img/llavero-freddy.png" alt="llavero freddy pesadilla" class="gradiente-3">
                 <h3>Llavero Freddy Pesadilla En lo Profundo</h3>
                 <h3>$6.000</h3>
                 <h4>Art. 207</h4>
                 <a href="./como-comprar.html" class="boton">Comprar</a>
             </div>
             <div class="imagen-card">
-                <img src="./../img/martillo-thor.png" alt="martillo thor">
+                <img src="./../img/martillo-thor.png" alt="martillo thor" class="gradiente-3">
                 <h3>Martillo Thor</h3>
                 <h3>$25.000</h3>
                 <h4>Art. 210</h4>
                 <a href="./como-comprar.html" class="boton">Comprar</a>
             </div>
             <div class="imagen-card">
-                <img src="./../img/gorra-terminator.png" alt="gorra terminator">
+                <img src="./../img/gorra-terminator.png" alt="gorra terminator" class="gradiente-3">
                 <h3>Gorra terminator></h3>
-                    <h3>$ 4.500</h3>
-                    <h4>Art. 500</h4>
-                    <a href="./como-comprar.html" class="boton">Comprar</a>
+                <h3>$ 4.500</h3>
+                <h4>Art. 500</h4>
+                <a href="./como-comprar.html" class="boton">Comprar</a>
             </div>
         </section>
         <section class="bloque-medio">
@@ -144,4 +158,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
