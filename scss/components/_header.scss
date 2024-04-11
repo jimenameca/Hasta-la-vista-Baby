@@ -1,36 +1,54 @@
 /*header*/
-header {
-    display: flex;
+
+/* display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: $color-menu-principal;
+    bg-body-tertiary
+    
+    */
 
-    .logo {
-        height: 150px;
+/*.menu-color{
+    background-color: $color-menu-principal;
+}*/
+
+header {
+
+    .menu{
+        flex-grow: 0;
     }
-
-    .desktop-menu {
-        ul {
-            list-style-type: none;
-            padding: 0;
-
-            li {
-                margin-right: 20px;
-                display: inline;
-
-                a {
-                    color: nth($list: $colores, $n: 1);
-                    text-decoration: solid;
-                    font-size: large;
-                    font-family: Arial, Helvetica, sans-serif;
-                }
-            }
-        }
+    
+    .menu .menu-ul{
+        column-gap: 10px;
+        align-items: center;
     }
-
-    .mobile-menu {
-        display: none;
-    }   
+    
+    .menu ul li a{
+        color: fuchsia;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    .menu ul li a:hover{
+        color: #ff00ff92;
+        text-decoration: underline;
+    }
+    
+    
+    .menu-button{
+        border: none;
+    }
+    
+    .menu-button:focus{
+        box-shadow: none;
+    }
+    
+    .padding-0{
+        padding: 0;
+    }
+    .menu-icon {
+        background-image: url(./../img/menu-hamburguesa.svg);
+    }
 }

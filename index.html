@@ -29,40 +29,34 @@
 <!-- Enlaces absolutos a otra pagina web - Atributo target blank para que abra otra pestaña(ver footer) Enlace relativo dentro del mismo PR ver header-->
 
 <body>
-    <header>
-        <img class="logo" src="./img/logo6.png" alt="Logo-hastalavista">
-        <nav class="desktop-menu">
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/ropa.html">Ropa</a>
-                </li>
-                <li>
-                    <a href="./pages/accesorios.html">Accesorios</a>
-                </li>
-                <li>
-                    <a href="./pages/como-comprar.html">Como Comprar</a>
-                </li>
-                <li>
-                    <a href="./pages/nosotros.html">Nosotros</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="mobile-menu">
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Inicio
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./pages/ropa.html">Ropa</a></li>
-                    <li><a class="dropdown-item" href="./pages/accesorios.html">Accesorios</a></li>
-                    <li><a class="dropdown-item" href="/pages/como-comprar.html">Como Comprar</a></li>
-                    <li><a class="dropdown-item" href="./pages/nosotros.html">Nosotros</a></li>
-                </ul>
-                </ul>
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid padding-0">
+                <a class="navbar-brand" href="./index.html"><img class="ps-2" src="./img/logo6.png" alt=""></a>
+                <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon menu-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-ul pe-2">
+                        <li class="nav-item">
+                            <a class="" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Ropa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Como Comprar</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -74,7 +68,7 @@
         </section>
         <h2 class=titulo-principal>Ingresos Exclusivos</h2>
         <div class="gradiente-4">
-        <img src="./img/hot-sale.png" alt="hot sale" class="animacion">
+            <img src="./img/hot-sale.png" alt="hot sale" class="animacion">
         </div>
         <section class="container-flex-grid">
             <div class="imagen-card">
@@ -149,5 +143,4 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

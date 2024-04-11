@@ -1,16 +1,33 @@
 /* media query de table 768 1024 */
 
-@media screen and (min-width: 769px) and (max-width: 960px) {
+/* @media screen and (max-width: 960px) {
     header {
-        background-color: aliceblue;
+    .menu-color { 
+        background-color: white;
+    }
+        
+    .menu{
+            position:absolute;
+            top: 150px;
+            width: 100%;
+        }
     }
 }
+*/
 
+@media screen and (max-width: 991px){
+    .menu{
+        position: absolute;
+        top: 152px;
+        background-color: aliceblue;
+        width: 100vw;
+    }
+}
 
 /* media query mobile 320px 768px */
 @media screen and (max-width: 768px) {
 
-    header {
+    /*  header {
         background-color: white;
         flex-direction: column;
         align-items: center;
@@ -23,8 +40,7 @@
             display: block;
             margin-top: 10px;
         }
-    }
-
+    } */
 
     main {
 
@@ -81,9 +97,9 @@
 
     .main_index {
 
-    .gradiente-4 {
-        display: none;
-    }       
+        .gradiente-4 {
+            display: none;
+        }
     }
 
     .main_como_comprar {
@@ -98,9 +114,9 @@
                 font-size: small;
             }
 
-        .como-comprar-2{
-            display:none;
-        }
+            .como-comprar-2 {
+                display: none;
+            }
         }
 
         .parrafo-dudas {
