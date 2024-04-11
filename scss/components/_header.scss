@@ -16,6 +16,13 @@
 
 header {
 
+    .logo{
+        width: 200px;
+    }
+    .menu-color{
+        background-color: $color-menu-principal;
+    }
+
     .menu{
         flex-grow: 0;
     }

@@ -32,6 +32,12 @@ footer li a {
 /*.menu-color{
     background-color: $color-menu-principal;
 }*/
+header .logo {
+  width: 200px;
+}
+header .menu-color {
+  background-color: #2B2B2B;
+}
 header .menu {
   flex-grow: 0;
 }
@@ -282,11 +288,19 @@ footer .logo-redes {
 }
 */
 @media screen and (max-width: 991px) {
-  .menu {
+  header .logo {
+    width: 150px;
+  }
+  header .menu {
     position: absolute;
     top: 152px;
-    background-color: aliceblue;
-    width: 100vw;
+    background-color: rgb(238, 207, 207);
+    width: 100%;
+  }
+  header .menu ul li a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
   }
 }
 /* media query mobile 320px 768px */
@@ -311,7 +325,7 @@ footer .logo-redes {
   main .titulo-principal {
     text-align: center;
     font-size: 24px;
-    color: blueviolet;
+    color: black;
     margin-bottom: 50px;
     margin-top: 10px;
   }
